@@ -1,0 +1,31 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": "/home/dimetrio/projects/home/psycho-free",
+    "paths": {
+			"@/*": [
+				"src/*"
+			],
+			"@app/*": [
+				"app/*"
+			],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@content/*": [
+        "src/content/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
+}

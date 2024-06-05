@@ -1,0 +1,32 @@
+ul.articles-container {
+	max-width: min(85vw, 780px);
+	margin:auto;
+	li.article-preview{
+		display: flex;
+		flex-flow: column;
+		gap: 10px;
+		.article-action {
+			margin: auto;
+			margin-right: 0;
+		}
+	}
+}
+
+article {
+	max-width: min(85vw, 780px);
+	margin:auto;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	code {
+		display: inline-block;
+		font-size: 12px;
+		max-width:100%;
+	}
+	pre {
+		padding:5px;
+		font-size:clamp(12px, (1rem + 5vw), 18px);
+		margin: 10px 0px;
+	}
+}

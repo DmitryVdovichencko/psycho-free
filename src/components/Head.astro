@@ -1,0 +1,26 @@
+---
+export interface Props {
+    title: string;
+    // description: string;
+    // canonicalURL?: string;
+    // pageType?: "article" | "website";
+    // img?: string | ImageMetadata;
+}
+
+
+const {
+    title = "С меня хватит...",
+    // description = site.description,
+    // canonicalURL = getSiteURL(Astro.url.pathname, Astro.site),
+    // img = site.image,
+    // pageType = "article",
+} = Astro.props;
+
+import "@styles/main.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title}</title>
+<ViewTransitions />
